@@ -1,5 +1,5 @@
 {
-  "name": "fabricate",
+  "name": "techblog",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -14,7 +14,6 @@
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",
     "connect-session-sequelize": "^7.1.7",
-    "dnd-npc": "^1.1.6",
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
     "express-handlebars": "^7.0.7",
