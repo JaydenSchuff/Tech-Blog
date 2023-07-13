@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const { User, Character, Race, Class, Background, Monster, Spell } = require('../models');
 const withAuth = require('../utils/auth');
 
 
