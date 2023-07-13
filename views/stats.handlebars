@@ -1,0 +1,65 @@
+{{!-- <div class="stats-cards">
+    <div class="stat-input" id="strength">
+        <p>Strength</p>
+        <input required type="number" min="1" max="20">
+    </div>
+    <div class="stat-input" id="dexterity">
+        <p>Dexterity</p>
+        <input required type="number" min="1" max="20">
+    </div>
+    <div class="stat-input" id="constitution">
+        <p>Constitution</p>
+        <input required type="number" min="1" max="20">
+    </div>
+    <div class="stat-input" id="intelligence">
+        <p>Intelligence</p>
+        <input required type="number" min="1" max="20">
+    </div>
+    <div class="stat-input" id="wisdom">
+        <p>Wisdom</p>
+        <input required type="number" min="1" max="20">
+    </div>
+    <div class="stat-input" id="charisma">
+        <p>Charisma</p>
+        <input required type="number" min="1" max="20">
+    </div>
+    <div class="stat-input" id="stat-submit">
+        <a href="/background">
+            <button>Submit!</button>
+        </a>
+    </div>
+</div> --}}
+
+<form id="stats-form" action="/background">
+    <div class="stat-input">
+        <label for="strength">Strength:</label>
+        <input required type="number" id="strength" min="1" max="20" />
+    </div>
+    <div class="stat-input">
+        <label for="dexterity">Dexterity:</label>
+        <input required type="number" id="dexterity" min="1" max="20" />
+    </div>
+    <div class="stat-input">
+        <label for="constitution">Constitution:</label>
+        <input required type="number" id="constitution" min="1" max="20" />
+    </div>
+    <div class="stat-input">
+        <label for="intelligence">Intelligence:</label>
+        <input required type="number" id="intelligence" min="1" max="20" />
+    </div>
+    <div class="stat-input">
+        <label for="wisdom">Wisdom:</label>
+        <input required type="number" id="wisdom" min="1" max="20" />
+    </div>
+    <div class="stat-input">
+        <label for="charisma">Charisma:</label>
+        <input required type="number" id="charisma" min="1" max="20" />
+    </div>
+
+    <div>
+        <button type="submit" id="stats-submit" onclick="statsSubmit()">Submit</button>
+    </div>
+
+</form>
+
+<script src="/js/stats.js"></script>

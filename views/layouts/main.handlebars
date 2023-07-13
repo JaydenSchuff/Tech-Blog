@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{!-- SCRIPT LINKS --}}
+      <script src="https://kit.fontawesome.com/7683696611.js" crossorigin="anonymous"></script>
+    {{!-- STYLE LINKS --}}
+      <link rel="stylesheet" href="/css/style.css">
+    <title>Tech-Blog</title>
+</head>
+
+<script>
+  window.addEventListener('scroll', function() {
+  var scrollPosition = window.pageYOffset;
+  var body = document.body;
+  body.style.setProperty('--scroll-position', scrollPosition);
+  body.classList.add('scroll-effect');
+});
+</script>
+
+<body>
+  <header>
+    <nav>
+      <div class= "nav-section" id="nav-logo-section">
+        <h1>Tech Blog</h1> 
+      </div>
+
+      <div class="nav-section" id="nav-link-section">
+        <a href="/">Homepage</a>
+        <a href="/blogs">Blogs</a>
+      </div>
+
+      <div class="nav-section" id="nav-social-section">
+        <a href="https://github.com/JaydenSchuff/Tech-Blog">
+            <div>Github</div>
+        </a>
+      </div>
+
+      <div class="nav-section" id="nav-login-section">
+        <div class="logon-button">
+          <a href="/login">
+          Login
+          </a>
+        </div>
+      </div>
+
+      {{#if logged_in}}
+        <div class="logon-button" id="logout">
+          <a href="/login">
+            Log Out
+          </a>
+        </div>
+      {{/if}} 
+
+    </nav>
+  </header>
+
+  <main>
+    {{!-- Body content here --}}
+    {{{ body }}}
+  </main>
+
+  <footer>
+    <div class="footer-section">
+      <p>Contacts</p>
+    </div>
+  </footer>
+
+  {{!-- SCRIPT LINKS --}}
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+
+  <script src="/js/style.js"></script>
+</body>
+
+</html>
