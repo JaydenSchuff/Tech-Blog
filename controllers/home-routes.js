@@ -41,5 +41,14 @@ router.get('/blog', withAuth, async (req, res) => {
   res.render('blog');
 });
 
+router.get('/posts', withAuth, async (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('posts');
+});
+
 
 module.exports = router;
